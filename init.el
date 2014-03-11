@@ -16,15 +16,16 @@
 
 (setq
  el-get-sources
- '(el-get            ;el-get is self-hosting
-   package           ;install emacs packages from elpa
-   ace-jump-mode     ;jump to anywhere in a buffer
-   color-theme       ;need my colors
-   emmet-mode        ;for html parsing
-   cl-lib            ;pacakage needed for dependencies
-   auto-complete     ;completes any word
-   autopair          ;pairs up parentheses
-   jedi              ;python auto-completion
+ '(el-get                ;el-get is self-hosting
+   package               ;install emacs packages from elpa
+   fill-column-indicator ;
+   ace-jump-mode         ;jump to anywhere in a buffer
+   color-theme           ;need my colors
+   emmet-mode            ;for html parsing
+   cl-lib                ;pacakage needed for dependencies
+   auto-complete         ;completes any word
+   autopair              ;pairs up parentheses
+   jedi                  ;python auto-completion
    ))
 
 (el-get 'sync el-get-sources)
@@ -124,6 +125,14 @@
   '(progn
      (color-theme-initialize)
      (color-theme-gnome2)))
+
+
+;; Enable fill column indicator
+(require 'fill-column-indicator)
+(define-globalized-minor-mode global-fci-mode fci-mode (lambda () (fci-mode t)))
+(global-fci-mode t)
+(setq fci-rule-column 80)
+(setq fci-rule-color "aquamarine4")
 
 
 ;; enables ace-jump-mode
