@@ -18,7 +18,7 @@
  el-get-sources
  '(el-get                ;el-get is self-hosting
    package               ;install emacs packages from elpa
-   fill-column-indicator ;
+   fill-column-indicator ;fill line for maximum character guide line
    ace-jump-mode         ;jump to anywhere in a buffer
    color-theme           ;need my colors
    emmet-mode            ;for html parsing
@@ -44,6 +44,11 @@
 
 ;; shows parens
 (show-paren-mode t)
+
+
+;;turn on ido mode
+(require 'ido)
+(ido-mode t)
 
 
 ;; stops making backup files
