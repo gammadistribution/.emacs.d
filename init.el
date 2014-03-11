@@ -9,6 +9,7 @@
     (eval-print-last-sexp))
   (el-get-emacswiki-refresh el-get-recipe-path-emacswiki t)
 )
+(add-to-list 'load-path "~/.emacs.d/pep8")
 
 ;; el-get installs cl-lib, a library other packages depend on in package.
 ;; load cl-lib from place it installs.
