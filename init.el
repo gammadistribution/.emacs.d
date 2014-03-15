@@ -9,7 +9,6 @@
     (eval-print-last-sexp))
   (el-get-emacswiki-refresh el-get-recipe-path-emacswiki t)
 )
-(add-to-list 'load-path "~/.emacs.d/pep8")
 
 ;; el-get installs cl-lib, a library other packages depend on in package.
 ;; load cl-lib from place it installs.
@@ -171,4 +170,5 @@
 (require 'emmet-mode)
 (add-hook 'sgml-mode-hook 'emmet-mode) ;; Auto-start on any markup modes
 (add-hook 'css-mode-hook 'emmet-mode) ;; Enable Emmet's css abbreviation
-(add-hook 'emmet-mode-hook (lambda () (setq emmet-indentation 2))) ;; Indent 2 spaces
+;; Indent 2 spaces
+(add-hook 'emmet-mode-hook (lambda () (setq emmet-indentation 2)))
