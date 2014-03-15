@@ -18,4 +18,4 @@ trouble loading it all in one go.  This is only the start-up cost and won't
 need to be done each time once all dependencies have been downloaded.
 
 If you want to use the python syntax checkers (pep8 and pyflakes) you need to
-install those via pip and chmod +x ~/.emacs.d/bin/pycheckers
+install those via pip.
