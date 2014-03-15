@@ -26,6 +26,7 @@
    auto-complete         ;completes any word
    autopair              ;pairs up parentheses
    jedi                  ;python auto-completion
+   pymacs                ;execute python commands with lisp
    ))
 
 (el-get 'sync el-get-sources)
@@ -172,3 +173,32 @@
 (add-hook 'css-mode-hook 'emmet-mode) ;; Enable Emmet's css abbreviation
 ;; Indent 2 spaces
 (add-hook 'emmet-mode-hook (lambda () (setq emmet-indentation 2)))
+
+
+;; Load flymake with pyflakes as minor mode whenever python files are launched.
+(when (load "flymake" t)
+  (defun flymake-pyflakes-init ()
+    (let* ((temp-file (flymake-init-create-temp-buffer-copy
+               'flymake-create-temp-inplace))
+       (local-file (file-relative-name
+            temp-file
+            (file-name-directory buffer-file-name))))
+      (list "~/.emacs.d/bin/pycheckers" (list local-file))))
+   (add-to-list 'flymake-allowed-file-name-masks
+             '("\\.py\\'" flymake-pyflakes-init)))
+
+(add-hook 'find-file-hook 'flymake-find-file-hook)
+
+
+;; Show errors in minibuffer when cursor is on flymake error
+(defun show-fly-err-at-point ()
+  "If the cursor is sitting on a flymake error, display the message in the minibuffer"
+  (require 'cl)
+  (interactive)
+  (let ((line-no (line-number-at-pos)))
+    (dolist (elem flymake-err-info)
+      (if (eq (car elem) line-no)
+      (let ((err (car (second elem))))
+        (message "%s" (flymake-ler-text err)))))))
+
+(add-hook 'post-command-hook 'show-fly-err-at-point)
