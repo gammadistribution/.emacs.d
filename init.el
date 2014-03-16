@@ -26,7 +26,6 @@
    auto-complete         ;completes any word
    autopair              ;pairs up parentheses
    jedi                  ;python auto-completion
-   pymacs                ;execute python commands with lisp
    ))
 
 (el-get 'sync el-get-sources)
@@ -202,3 +201,11 @@
         (message "%s" (flymake-ler-text err)))))))
 
 (add-hook 'post-command-hook 'show-fly-err-at-point)
+
+
+;; Configure to wait a bit longer after edits before starting
+(setq-default flymake-no-changes-timeout '3)
+
+;; Keymaps to navigate to the errors
+(add-hook 'python-mode-hook '(lambda () (define-key python-mode-map "\C-cn" 'flymake-goto-next-error)))
+(add-hook 'python-mode-hook '(lambda () (define-key python-mode-map "\C-cp" 'flymake-goto-prev-error)))
