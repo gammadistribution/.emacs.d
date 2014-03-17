@@ -145,9 +145,13 @@
 (define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
 
 
+
 ;; python auto-complete with jedi
 ;; requires python-virtualenv to be installed
 (require 'auto-complete)
+(setq jedi:environment-root "python3.2")
+(setq jedi:environment-virtualenv
+      (list "virtualenv" "--python=/usr/bin/python3.2" "--system-site-packages"))
 (auto-complete-mode t)
 (global-auto-complete-mode t)
 (add-hook 'python-mode-hook 'global-auto-complete-mode t)
