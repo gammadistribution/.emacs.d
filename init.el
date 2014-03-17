@@ -145,7 +145,6 @@
 (define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
 
 
-
 ;; python auto-complete with jedi
 ;; requires python-virtualenv to be installed
 (require 'auto-complete)
