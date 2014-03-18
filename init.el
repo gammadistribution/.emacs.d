@@ -169,14 +169,6 @@
 (autopair-global-mode) ;; to enable in all buffers
 
 
-;; enables emmet-mode for html authoring
-(require 'emmet-mode)
-(add-hook 'sgml-mode-hook 'emmet-mode) ;; Auto-start on any markup modes
-(add-hook 'css-mode-hook 'emmet-mode) ;; Enable Emmet's css abbreviation
-;; Indent 2 spaces
-(add-hook 'emmet-mode-hook (lambda () (setq emmet-indentation 2)))
-
-
 ;; Load flymake with pyflakes as minor mode whenever python files are launched.
 (when (load "flymake" t)
   (defun flymake-pyflakes-init ()
@@ -188,9 +180,8 @@
       (list "~/.emacs.d/bin/pycheckers" (list local-file))))
    (add-to-list 'flymake-allowed-file-name-masks
              '("\\.py\\'" flymake-pyflakes-init)))
-
+(delete '("\\.html?\\'" flymake-xml-init) flymake-allowed-file-name-masks)
 (add-hook 'find-file-hook 'flymake-find-file-hook)
-
 
 ;; Show errors in minibuffer when cursor is on flymake error
 (defun show-fly-err-at-point ()
@@ -205,10 +196,17 @@
 
 (add-hook 'post-command-hook 'show-fly-err-at-point)
 
-
 ;; Configure to wait a bit longer after edits before starting
 (setq-default flymake-no-changes-timeout '3)
 
 ;; Keymaps to navigate to the errors
 (add-hook 'python-mode-hook '(lambda () (define-key python-mode-map "\C-cn" 'flymake-goto-next-error)))
 (add-hook 'python-mode-hook '(lambda () (define-key python-mode-map "\C-cp" 'flymake-goto-prev-error)))
+
+
+;; enables emmet-mode for html authoring
+(require 'emmet-mode)
+(add-hook 'sgml-mode-hook 'emmet-mode) ;; Auto-start on any markup modes
+(add-hook 'css-mode-hook 'emmet-mode) ;; Enable Emmet's css abbreviation
+;; Indent 2 spaces
+(add-hook 'emmet-mode-hook (lambda () (setq emmet-indentation 2)))
