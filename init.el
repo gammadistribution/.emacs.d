@@ -26,6 +26,7 @@
    auto-complete         ;completes any word
    autopair              ;pairs up parentheses
    jedi                  ;python auto-completion
+   haskell-mode          ;haskell-library for emacs
    ))
 
 (el-get 'sync el-get-sources)
@@ -36,6 +37,10 @@
 
 ;; Enables column number counter.
 (setq column-number-mode t)
+
+
+;; Do not indent with tabs.
+(setq-default indent-tabs-mode nil)
 
 
 ;; Deletes trailing spaces when saving file.
@@ -93,10 +98,6 @@
 ;; enables timestamps and notes when items marked as done in org-mode
 (setq org-log-done 'time)
 (setq org-log-done 'note)
-
-
-;; Shortcut for python-shell.
-(global-set-key (kbd "C-c C-z") 'python-shell)
 
 
 ;; sets M-Y to move backwards through kill ring.
@@ -210,3 +211,12 @@
 (add-hook 'css-mode-hook 'emmet-mode) ;; Enable Emmet's css abbreviation
 ;; Indent 2 spaces
 (add-hook 'emmet-mode-hook (lambda () (setq emmet-indentation 2)))
+
+
+;; Haskell
+
+
+;; turn on documentation and indentation and allow for infererior haskell mode
+(add-hook 'haskell-mode-hook 'turn-on-haskell-doc-mode)
+(add-hook 'haskell-mode-hook 'turn-on-haskell-indent)
+(require 'inf-haskell)
