@@ -13,6 +13,7 @@
 ;; el-get installs cl-lib, a library other packages depend on in package.
 ;; load cl-lib from place it installs.
 (add-to-list 'load-path "~/.emacs.d/el-get/package/elpa/cl-lib-0.5")
+(add-to-list 'load-path "~/.emacs.d/elpa/auctex-11.87.7")
 
 (setq
  el-get-sources
@@ -220,3 +221,13 @@
 (add-hook 'haskell-mode-hook 'turn-on-haskell-doc-mode)
 (add-hook 'haskell-mode-hook 'turn-on-haskell-indent)
 (require 'inf-haskell)
+
+
+;; LaTeX
+;; requires texlive-full, texify, auctex, preview-latex on system.
+
+
+(load "auctex.el" nil t t)
+
+(defun flymake-get-tex-args (file-name)
+    (list "pdflatex" (list "-file-line-error" "-draftmode" "-interaction=nonstopmode" file-name)))
