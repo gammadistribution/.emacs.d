@@ -27,7 +27,6 @@
    auto-complete         ;completes any word
    autopair              ;pairs up parentheses
    jedi                  ;python auto-completion
-   haskell-mode          ;haskell-library for emacs
    ))
 
 (el-get 'sync el-get-sources)
@@ -150,9 +149,9 @@
 ;; python auto-complete with jedi
 ;; requires python-virtualenv to be installed
 (require 'auto-complete)
-(setq jedi:environment-root "python3.2")
+(setq jedi:environment-root "python3.4")
 (setq jedi:environment-virtualenv
-      (list "virtualenv" "--python=/usr/bin/python3.2" "--system-site-packages"))
+      (list "virtualenv" "--python=/usr/bin/python3.4" "--system-site-packages"))
 (auto-complete-mode t)
 (global-auto-complete-mode t)
 (add-hook 'python-mode-hook 'global-auto-complete-mode t)
@@ -214,15 +213,6 @@
 (add-hook 'emmet-mode-hook (lambda () (setq emmet-indentation 2)))
 
 
-;; Haskell
-
-
-;; turn on documentation and indentation and allow for infererior haskell mode
-(add-hook 'haskell-mode-hook 'turn-on-haskell-doc-mode)
-(add-hook 'haskell-mode-hook 'turn-on-haskell-indent)
-(require 'inf-haskell)
-
-
 ;; LaTeX
 ;; requires texlive-full, texify, auctex, preview-latex on system.
 
@@ -231,3 +221,15 @@
 
 (defun flymake-get-tex-args (file-name)
     (list "pdflatex" (list "-file-line-error" "-draftmode" "-interaction=nonstopmode" file-name)))
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(tool-bar-mode nil))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
