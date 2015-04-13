@@ -31,6 +31,13 @@
 
 (el-get 'sync el-get-sources)
 
+
+
+;;;;;;;;;;;
+;; Emacs ;;
+;;;;;;;;;;;
+
+
 ;; Disable splash screen
 (setq inhibit-splash-screen t)
 
@@ -146,6 +153,16 @@
 (define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
 
 
+;; Turn off tool bar mode
+(setq-default tool-bar-mode nil)
+
+
+
+;;;;;;;;;;;;
+;; Python ;;
+;;;;;;;;;;;;
+
+
 ;; python auto-complete with jedi
 ;; requires python-virtualenv to be installed
 (require 'auto-complete)
@@ -184,6 +201,7 @@
 (delete '("\\.html?\\'" flymake-xml-init) flymake-allowed-file-name-masks)
 (add-hook 'find-file-hook 'flymake-find-file-hook)
 
+
 ;; Show errors in minibuffer when cursor is on flymake error
 (defun show-fly-err-at-point ()
   "If the cursor is sitting on a flymake error, display the message in the minibuffer"
@@ -197,12 +215,20 @@
 
 (add-hook 'post-command-hook 'show-fly-err-at-point)
 
+
 ;; Configure to wait a bit longer after edits before starting
 (setq-default flymake-no-changes-timeout '3)
+
 
 ;; Keymaps to navigate to the errors
 (add-hook 'python-mode-hook '(lambda () (define-key python-mode-map "\C-cn" 'flymake-goto-next-error)))
 (add-hook 'python-mode-hook '(lambda () (define-key python-mode-map "\C-cp" 'flymake-goto-prev-error)))
+
+
+
+;;;;;;;;;;
+;; HTML ;;
+;;;;;;;;;;
 
 
 ;; enables emmet-mode for html authoring
@@ -213,23 +239,24 @@
 (add-hook 'emmet-mode-hook (lambda () (setq emmet-indentation 2)))
 
 
-;; LaTeX
+
+;;;;;;;;;;;
+;; LaTeX ;;
+;;;;;;;;;;;
+
+
 ;; requires texlive-full, texify, auctex, preview-latex on system.
-
-
 (load "auctex.el" nil t t)
 
 (defun flymake-get-tex-args (file-name)
     (list "pdflatex" (list "-file-line-error" "-draftmode" "-interaction=nonstopmode" file-name)))
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(tool-bar-mode nil))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
+
+
+
+;;;;;;;
+;; C ;;
+;;;;;;;
+
+
+;; Set default indent level to 4 spaces
+(setq-default c-basic-offset 4)

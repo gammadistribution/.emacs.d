@@ -1,5 +1,7 @@
 el-get/
 auto-save-list/
-.emacs.desktop
+.emacs.desktop*
 ac-comphist.dat
 .python-environments
+session*
+elpa/
