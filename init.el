@@ -38,6 +38,17 @@
 ;;;;;;;;;;;
 
 
+;; starts emacs in full screen mode
+(defun toggle-fullscreen ()
+  (interactive)
+  (x-send-client-message nil 0 nil "_NET_WM_STATE" 32
+	    		 '(2 "_NET_WM_STATE_MAXIMIZED_VERT" 0))
+  (x-send-client-message nil 0 nil "_NET_WM_STATE" 32
+	    		 '(2 "_NET_WM_STATE_MAXIMIZED_HORZ" 0))
+)
+(toggle-fullscreen)
+
+
 ;; Disable splash screen
 (setq inhibit-splash-screen t)
 
@@ -50,6 +61,10 @@
 (setq-default indent-tabs-mode nil)
 
 
+;; Indents should be of length 4.
+(setq-default tab-width 4)
+
+
 ;; Deletes trailing spaces when saving file.
 (add-hook 'before-save-hook 'delete-trailing-whitespace)
 
@@ -58,24 +73,16 @@
 (show-paren-mode t)
 
 
-;;turn on ido mode
-(require 'ido)
-(ido-mode t)
+;; Turn off tool bar mode
+(setq-default tool-bar-mode nil)
+
+
+;; Set default font to 10pt
+(set-face-attribute 'default nil :height 100)
 
 
 ;; stops making backup files
 (setq make-backup-files nil)
-
-
-;; starts emacs in full screen mode
-(defun toggle-fullscreen ()
-  (interactive)
-  (x-send-client-message nil 0 nil "_NET_WM_STATE" 32
-	    		 '(2 "_NET_WM_STATE_MAXIMIZED_VERT" 0))
-  (x-send-client-message nil 0 nil "_NET_WM_STATE" 32
-	    		 '(2 "_NET_WM_STATE_MAXIMIZED_HORZ" 0))
-)
-(toggle-fullscreen)
 
 
 ;; save buffers on exit.
@@ -97,22 +104,42 @@
 (when window-system (set-exec-path-from-shell-PATH))
 
 
-;; org-mode todo keywords
-(setq org-todo-keywords
-  '((sequence "TODO" "IN-PROGRESS" "DONE")))
-
-
-;; enables timestamps and notes when items marked as done in org-mode
-(setq org-log-done 'time)
-(setq org-log-done 'note)
-
-
 ;; sets M-Y to move backwards through kill ring.
 (defun yank-pop-forwards (arg)
   (interactive "p")
   (yank-pop (- arg)))
 
 (global-set-key "\M-Y" 'yank-pop-forwards)
+
+
+;; Enable fill column indicator
+(require 'fill-column-indicator)
+(define-globalized-minor-mode global-fci-mode fci-mode (lambda () (fci-mode t)))
+(global-fci-mode t)
+(setq fci-rule-column 80)
+(setq fci-rule-color "aquamarine4")
+
+
+;; Adds color-theme and loads color-theme-gnome2 as default.
+(require 'color-theme)
+(eval-after-load "color-theme"
+  '(progn
+     (color-theme-initialize)
+     (color-theme-gnome2)))
+
+
+;;turn on ido mode
+(require 'ido)
+(ido-mode t)
+
+
+;; Enable cl-lib to be used with other packages.
+(require 'cl-lib)
+
+
+;; enables ace-jump-mode
+(require 'ace-jump-mode)
+(define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
 
 
 ;; enables google voodoo
@@ -128,33 +155,19 @@
 (global-set-key (kbd "C-x g") 'google)
 
 
-;; Enable cl-lib to be used with other packages.
-(require 'cl-lib)
+;;;;;;;;;;;;;;
+;; Org mode ;;
+;;;;;;;;;;;;;;
 
 
-;; Adds color-theme and loads color-theme-gnome2 as default.
-(require 'color-theme)
-(eval-after-load "color-theme"
-  '(progn
-     (color-theme-initialize)
-     (color-theme-gnome2)))
+;; org-mode todo keywords
+(setq org-todo-keywords
+  '((sequence "TODO" "IN-PROGRESS" "DONE")))
 
 
-;; Enable fill column indicator
-(require 'fill-column-indicator)
-(define-globalized-minor-mode global-fci-mode fci-mode (lambda () (fci-mode t)))
-(global-fci-mode t)
-(setq fci-rule-column 80)
-(setq fci-rule-color "aquamarine4")
-
-
-;; enables ace-jump-mode
-(require 'ace-jump-mode)
-(define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
-
-
-;; Turn off tool bar mode
-(setq-default tool-bar-mode nil)
+;; enables timestamps and notes when items marked as done in org-mode
+(setq org-log-done 'time)
+(setq org-log-done 'note)
 
 
 
@@ -225,6 +238,11 @@
 (add-hook 'python-mode-hook '(lambda () (define-key python-mode-map "\C-cp" 'flymake-goto-prev-error)))
 
 
+;; use IPython
+(setq-default py-shell-name "ipython")
+(setq-default py-which-bufname "IPython")
+
+
 
 ;;;;;;;;;;
 ;; HTML ;;
@@ -248,9 +266,11 @@
 ;; requires texlive-full, texify, auctex, preview-latex on system.
 (load "auctex.el" nil t t)
 
-(defun flymake-get-tex-args (file-name)
-    (list "pdflatex" (list "-file-line-error" "-draftmode" "-interaction=nonstopmode" file-name)))
+;; Turn on flyspell mode
+(add-hook 'LaTeX-mode-hook #'turn-on-flyspell)
 
+;; Turn on pdflatex by default
+(setq TeX-PDF-mode t)
 
 
 ;;;;;;;
@@ -260,3 +280,18 @@
 
 ;; Set default indent level to 4 spaces
 (setq-default c-basic-offset 4)
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(org-agenda-files
+   (quote
+    ("~/Documents/mathematics/statistics/statistics.org" "~/Documents/education.org")))
+ '(org-support-shift-select t))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )

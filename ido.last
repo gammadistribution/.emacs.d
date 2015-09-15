@@ -1,0 +1,206 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/matthew/Documents/mathematics/MATH634/" . "homework_3/")
+ ("/home/matthew/Documents/projects/coursera/introdatascience/datasci_course_materials/assignment3/problems/" . "solution_files/")
+ ("/home/matthew/Documents/GreenZone/ElasticSearch/" . "elasticsearch-1.5.2/")
+ ("/home/matthew/Documents/projects/coursera/introdatascience/datasci_course_materials/assignment3/" . "data/")
+ ("/home/matthew/Documents/projects/coursera/introdatascience/" . "datasci_course_materials/")
+ ("/home/matthew/Documents/projects/coursera/introdatascience/datasci_course_materials/" . "assignment3/")
+ ("/home/matthew/Environments/statistics/lib/python3.4/site-packages/" . "python_oauth2-0.7.0-py3.4.egg-info/")
+ ("/home/matthew/Environments/statistics/lib/python3.4/" . "site-packages/")
+ ("/home/matthew/Environments/statistics/lib/" . "python3.4/")
+ ("/home/matthew/Environments/statistics/" . "lib/")
+ ("/home/matthew/Environments/" . "statistics/")
+ ("/home/matthew/Documents/projects/coursera/" . "introdatascience/")
+ ("/home/" . "matthew/")
+ ("/home/matthew/Documents/mathematics/statistics/statsintro/" . "exercises/")
+ ("/home/matthew/Documents/mathematics/" . "MATH634/")
+ ("/home/matthew/Documents/GreenZone/" . "Notes/")
+ ("/home/matthew/Documents/projects/projecteuler/problems/input/" . "problem_0054/")
+ ("/home/matthew/Documents/projects/projecteuler/problems/" . "input/")
+ ("/home/matthew/Documents/projects/projecteuler/" . "problems/")
+ ("/home/matthew/Documents/projects/c_programming/exercises/" . "exercise_6/")
+ ("/home/matthew/.emacs.d/" . ".python-environments/")
+ ("/home/matthew/Documents/employment/" . "resume/")
+ ("/home/matthew/Scripts/" . "Keyboard/")
+ ("/home/matthew/Documents/projects/c_programming/" . "exercises/")
+ ("/home/matthew/Documents/projects/" . "projecteuler/")
+ ("/home/matthew/Documents/" . "mathematics/")
+ ("/home/matthew/" . ".emacs.d/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/matthew/.emacs.d/"
+ "/home/matthew/Documents/mathematics/MATH634/homework_3/"
+ "/home/matthew/Downloads/"
+ "/home/matthew/Documents/mathematics/MATH634/homework_2/"
+ "/home/matthew/Documents/mathematics/MATH634/homework_1/"
+ "/home/matthew/Scripts/Keyboard/"
+ "/home/matthew/Documents/projects/projecteuler/problems/"
+ "/home/matthew/Documents/projects/coursera/introdatascience/datasci_course_materials/assignment1/"
+ "/home/matthew/Documents/projects/coursera/introdatascience/datasci_course_materials/assignment3/data/"
+ "/home/matthew/Documents/projects/coursera/introdatascience/datasci_course_materials/assignment3/solutions/"
+ "/home/matthew/Documents/projects/coursera/introdatascience/datasci_course_materials/assignment3/problems/"
+ "/home/matthew/Documents/projects/coursera/introdatascience/"
+ "/home/matthew/Documents/projects/coursera/introdatascience/datasci_course_materials/assignment3/problems/solution_files/"
+ "/home/matthew/Documents/projects/coursera/introdatascience/datasci_course_materials/assignment3/"
+ "/home/matthew/Documents/GreenZone/Notes/"
+ "/home/matthew/Documents/org-files/"
+ "/home/matthew/Environments/statistics/lib/python3.4/site-packages/python_oauth2-0.7.0-py3.4.egg-info/"
+ "/home/matthew/Documents/mathematics/statistics/statsintro/exercises/"
+ "/home/matthew/Documents/mathematics/statistics/statsintro/"
+ "/home/matthew/Documents/mathematics/statistics/"
+ "/home/matthew/Documents/"
+ "/home/matthew/Documents/GreenZone/"
+ "/home/matthew/Documents/projects/java_programming/PlayingCards/"
+ "/home/matthew/Documents/projects/java_programming/HelloWorld/"
+ "/home/matthew/"
+ "/home/matthew/Documents/projects/c_programming/exercises/exercise_6/"
+ "/home/matthew/Documents/projects/c_programming/exercises/exercise_5/"
+ "/home/matthew/Documents/projects/projecteuler/problems/input/problem_0054/"
+ "/home/matthew/Documents/projects/projecteuler/"
+ "/home/matthew/Documents/employment/resume/"
+ "/home/matthew/Documents/projects/c_programming/exercises/exercise_4/"
+ "/home/matthew/Documents/projects/c_programming/exercises/exercise_3/"
+ "/home/matthew/Documents/projects/c_programming/hello_world/"
+ "/home/matthew/Scripts/Backup/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "init.el"
+ "homework_3.tex"
+ "homework_2.tex"
+ "homework_2.log"
+ "homework_2.aux"
+ "homework_1.tex"
+ "homework_1.pdf"
+ "setxkbmap.sh"
+ "hw-template.tex"
+ "problem_0028.py"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/matthew/.emacs.d/" (22008 41739 213054 336000) "ac-comphist.dat" "session.101c16060aa6d72314143260293555299200000018190037" "session.10500b000d41eeecbc143273501194719000000016360035" "session.10319fd84fe8a11795143265160614130200000025900035" "session.1090893878458ed62f142914329173791400000127690035" "./" "session.106a57de122a2be12514325570053090800000251270035" ".gitignore" "README.md" "el-get/" "session.1028b6477576a5a55c142992272748625200000016420037" ".emacs.desktop" "elpa/" ".git/" "session.10c29d15e2bbbcf44a143265847893089900000053140035" "session.10ff4b20882b1740d6143377354944229500000018330035" "ido.last" "../" "init.el" "session.109b80456eddb8c988143198449177026500000018280035" "auto-save-list/" "session.10d8448005f7e8407e143352331422437300000059600035" "bin/" "session.10914c4d0639a734b143361513361385200000016000035" "session.104352df5853e80ea143078855358947600000019040036" ".emacs.desktop.lock" ".python-environments/")
+
+ ("/home/matthew/" (22008 41708 849055 10000) "Templates/" ".ipython/" ".xdvirc" ".pki/" ".dbus/" "Public/" "./" ".gvfs/" ".xsession-errors" ".gconf/" ".ssh/" "Music/" ".matlab/" ".texmf-var/" ".gnome2/" ".pulse/" ".bashrc" "Scripts/" ".ICEauthority" "Environments/" "Downloads/" ".gitconfig" ".cache/" ".python_history" "Desktop/" ".xsession-errors.old" ".mozilla/" ".bash_logout" "Videos/" "../" ".gnome2_private/" ".config/" ".local/" ".profile" ".gnome/" "Pictures/" "Documents/" ".bash_history" ".pulse-cookie" ".fontconfig/" ".subversion/" ".pip/" ".java/" ".mission-control/" ".emacs.d/" ".gtk-bookmarks")
+
+ ("/home/matthew/Documents/mathematics/MATH634/homework_3/" (22008 41694 845055 321000) "homework_3.tex" "homework_3.aux" "./" "homework_3.log" "homework_3.dvi" "../" "homework_3.pdf")
+
+ ("/home/matthew/Documents/mathematics/MATH634/" (22008 38599 121124 28000) "homework_1/" "./" "homework_3/" "../" "homework_2/")
+
+ ("/home/matthew/Downloads/" (22000 42024 371309 55000) "./" "../" "homework_2.tex")
+
+ ("/home/matthew/Documents/mathematics/MATH634/homework_2/" (22000 42883 31299 735000) "./" "homework_2.log" "../" "homework_2.aux" "homework_2.tex" "homework_2.pdf" "homework_2.dvi")
+
+ ("/home/matthew/Documents/mathematics/MATH634/homework_1/" (21992 13896 88743 597000) "homework_1.pdf" "./" "homework_1.aux" "homework_1.log" "homework_1.dvi" "assignment1-Fa15.pdf" "homework_1.tex" "../")
+
+ ("/home/matthew/Documents/" (21996 25682 65949 377000) "employment/" "./" "websites/" "mathematics/" "org-files/" "projects/" "MATLAB/" "GreenZone/" "../")
+
+ ("/home/matthew/Scripts/Keyboard/" (21804 21411 855920 49000) "./" "setxkbmap.sh" "../")
+
+ ("/home/matthew/Documents/mathematics/" (21984 56857 827251 707000) "./" "applied_mathematics_laboratory/" "MATH634/" "../" "statistics/" "independent_research/")
+
+ ("/home/matthew/Documents/projects/coursera/introdatascience/datasci_course_materials/assignment3/problems/solution_files/" (21879 2592 107852 132000) "solution_inverted_index.json" "solution_multiply.json" "solution_asymmetric_friendships.json" "./" "solution_join.json" "solution_unique_trims.json" "../" "solution_friend_count.json")
+
+ ("/home/matthew/Documents/projects/coursera/introdatascience/datasci_course_materials/assignment3/problems/" (21879 2592 107852 132000) "MapReduce.py" "./" "__pycache__/" "matrix.py" "inverted_index.py" "solution_files/" "join.py" "../" "friend_count.py" "unique_trims.py" "asymmetric_friendships.py")
+
+ ("/home/matthew/Documents/projects/coursera/introdatascience/datasci_course_materials/assignment1/" (21884 30668 259203 134000) "tweet_sentiment_output.txt" "happiness.py" "problem_1_submission.txt" "./" "output.txt" "top_ten.py" "README.html" "AFINN-111.txt" "AFINN-README.txt" "assignment1.html" "twitterstream.py" "../" "tweet_sentiment.py" "frequency.py" "term_sentiment.py")
+
+ ("/home/matthew/Documents/projects/projecteuler/problems/" (21916 19698 391372 784000) "problem_0007.py" "problem_0021.py" "problem_0009.py" "problem_0028.py" "./" "__pycache__/" "problem_0003.py" "problem_0002.py" "problem_0008.py" "problem_0012.py" "problem_0024.py" "problem_0004.py" "input/" "problem_0014.py" "problem_0022.py" "problem_0013.py" "problem_0010.py" "problem_0006.py" "problem_0054.py" "../" "problem_0025.py" "__init__.py" "problem_0023.py" "problem_0017.py" "problem_0005.py" "problem_0001.py" "problem_0016.py" "problem_0011.py")
+
+ ("/home/matthew/Documents/projects/coursera/introdatascience/datasci_course_materials/assignment3/solutions/" (21878 63285 11959 621000) "multiply.json" "./" "friend_count.json" "join.json" "../" "unique_trims.json" "asymmetric_friendships.json" "inverted_index.json")
+
+ ("/home/matthew/Documents/projects/coursera/introdatascience/datasci_course_materials/assignment3/" (21878 59969 952033 196000) "./" "__pycache__/" "solutions/" "wordcount.py" "../" "problems/" "data/")
+
+ ("/home/matthew/Documents/org-files/" (21877 42573 838426 822000) "./" "../" "education.org")
+
+ ("/home/matthew/Documents/projects/coursera/introdatascience/" (21878 15577 493018 454000) "matrix_multiplication/" "./" "datasci_course_materials/" "../" "course_notes.org")
+
+ ("/home/matthew/Documents/GreenZone/ElasticSearch/elasticsearch-1.5.2/" (21860 41768 788920 443000) "./" "lib/" "LICENSE.txt" "config/" "../" "logs/" "bin/" "NOTICE.txt" "data/" "plugins/" "README.textile")
+
+ ("/home/matthew/Documents/GreenZone/ElasticSearch/" (21861 1935 184349 997000) "./" "elastic_search_definitive_guide.txt.save" "../" "elastic_search_definitive_guide.txt" "elasticsearch-1.5.2/")
+
+ ("/home/matthew/Documents/projects/coursera/introdatascience/datasci_course_materials/assignment3/data/" (21876 21753 432414 27000) "books.json" "./" "dna.json" "friends.json" "records.json" "../" "matrix.json")
+
+ ("/home/matthew/Documents/projects/coursera/introdatascience/datasci_course_materials/" (21876 21753 460414 26000) "./" "assignment2/" "assignment4/" "assignment5/" "README.md" ".git/" "assignment3/" "../" "assignment1/")
+
+ ("/home/matthew/Documents/projects/coursera/introdatascience/datasci_course_materials/assignment2/" (21876 26277 776313 612000) "a.csv" "problem_2/" "reuters.db" "./" "b.csv" "Frequency.csv" "problem_3/" "../" "assignment2.html" "problem_1/" "matrix.db")
+
+ ("/home/matthew/Documents/projects/coursera/introdatascience/datasci_course_materials/assignment2/problem_3/" (21876 29126 268250 392000) "./" "queries/" "../" "results/")
+
+ ("/home/matthew/Documents/projects/coursera/introdatascience/datasci_course_materials/assignment2/problem_3/results/" (21876 30804 860213 137000) "./" "keyword_search.txt" "../" "similarity_matrix.txt")
+
+ ("/home/matthew/Environments/statistics/lib/python3.4/site-packages/python_oauth2-0.7.0-py3.4.egg-info/" (21875 6358 80612 33000) "SOURCES.txt" "./" "requires.txt" "PKG-INFO" "installed-files.txt" "top_level.txt" "../" "dependency_links.txt")
+
+ ("/home/matthew/Environments/statistics/lib/python3.4/site-packages/" (21875 6358 228612 30000) "pytz/" "setuptools-5.5.1.dist-info/" "statsmodels/" "scikits.bootstrap-0.3.2-py3.4.egg-info/" "jsonschema/" "pkg_resources.py" "./" "__pycache__/" "matplotlib/" "jinja2/" "matplotlib-1.4.3-py3.4-nspkg.pth" "pylab.py" "_markerlib/" "pip/" "scikits/" "scikits.bootstrap-0.3.2-py3.4-nspkg.pth" "pandas/" "scipy/" "pyparsing.py" "pytz-2015.4.dist-info/" "patsy/" "zmq/" "easy_install.py" "tornado-4.2-py3.4.egg-info/" "scipy-0.15.1-py3.4.egg-info/" "IPython/" "zmq-0.0.0-py3.4.egg-info/" "python_dateutil-2.4.2.dist-info/" "statsmodels-0.6.1-py3.4.egg-info/" "markupsafe/" "Pygments-2.0.2.dist-info/" "nose-1.3.7.dist-info/" "basicauth.py" "numpy-1.9.2-py3.4.egg-info/" "patsy-0.3.0.dist-info/" "numpy/" "six.py" "../" "setuptools/" "pyparsing-2.0.3.dist-info/" "seaborn-0.5.1-py3.4.egg-info/" "MarkupSafe-0.23-py3.4.egg-info/" "matplotlib-1.4.3-py3.4.egg-info/" "pip-1.5.6.dist-info/" "Jinja2-2.7.3-py3.4.egg-info/" "pygments/" "PySide-1.2.2-py3.4.egg-info/" "jsonschema-2.4.0.dist-info/" "pandas-0.16.1-py3.4.egg-info/" "PySide/" "seaborn/" "tornado/" "dateutil/" "pymc/" "six-1.9.0.dist-info/" "ipython-3.1.0.dist-info/" "python_oauth2-0.7.0-py3.4.egg-info/" "pymc-2.3.4-py3.4.egg-info/" "mpl_toolkits/" "oauth2/" "pysideuic/" "basicauth-0.2-py3.4.egg-info/" "pyzmq-14.6.0-py3.4.egg-info/" "nose/")
+
+ ("/home/matthew/Environments/statistics/lib/python3.4/" (21873 8155 4853 522000) "sre_compile.py" "functools.py" "io.py" "bisect.py" "token.py" "re.py" "site-packages/" "config-3.4m-x86_64-linux-gnu/" "./" "types.py" "heapq.py" "sre_parse.py" "__pycache__/" "rlcompleter.py" "lib-dynload/" "tarfile.py" "struct.py" "linecache.py" "orig-prefix.txt" "encodings/" "weakref.py" "tempfile.py" "copy.py" "fnmatch.py" "reprlib.py" "base64.py" "posixpath.py" "collections/" "ntpath.py" "random.py" "codecs.py" "distutils/" "site.py" "_collections_abc.py" "imp.py" "no-global-site-packages.txt" "../" "_bootlocale.py" "hmac.py" "stat.py" "operator.py" "os.py" "_dummy_thread.py" "tokenize.py" "keyword.py" "shutil.py" "abc.py" "warnings.py" "plat-x86_64-linux-gnu/" "sre_constants.py" "_weakrefset.py" "__future__.py" "importlib/" "locale.py" "hashlib.py" "copyreg.py" "genericpath.py")
+
+ ("/home/matthew/Environments/statistics/lib/" (21873 8155 4853 522000) "./" "python3.4/" "../" "python-wheels/")
+
+ ("/home/matthew/Environments/statistics/" (21873 10391 328829 248000) "./" "include/" "lib/" "man/" "../" "bin/" "share/")
+
+ ("/home/matthew/Environments/" (21873 8154 968853 522000) "./" "../" "django1.7_dev/" "statistics/")
+
+ ("/home/matthew/Documents/projects/coursera/" (21873 54409 686072 586000) "./" "../" "introdatascience/")
+
+ ("/home/matthew/Documents/projects/" (21873 54395 470072 901000) "./" "c_programming/" "java_programming/" "../" "coursera/" "projecteuler/")
+
+ ("/home/matthew/Documents/mathematics/statistics/statsintro/exercises/" (21873 7215 952863 715000) "./" "statsbasics.py" "../" "distributions.py" "boomer_weight_hist.png" "data/")
+
+ ("/home/" (21803 19693 768346 200000) "./" "../" "matthew/")
+
+ ("/home/matthew/Documents/mathematics/statistics/" (21872 23289 332658 387000) "./" "../" "statsintro/")
+
+ ("/home/matthew/Documents/mathematics/statistics/statsintro/" (21873 4743 80890 557000) "./" "statistics_requirements.txt" "../" "statistics.org" "exercises/")
+
+ ("/home/matthew/Documents/employment/resume/" (21871 15866 229028 759000) "resume_flymake.log" "./" ".gitignore" "resume.docx" "res.cls" ".git/" "resume.pdf" "resume.log" "../" "resume.tex" "res.log" "resume.dvi")
+
+ ("/home/matthew/Documents/GreenZone/" (21862 11899 125912 998000) "./" "letter_regarding_fitness_concerns.odt" "ElasticSearch/" "../" "Notes/" "letter_regarding_fitness_concerns.docx")
+
+ ("/home/matthew/Documents/GreenZone/Notes/" (21862 29151 505223 258000) "./" "elasticsearch_core_outline.pdf" "elasticsearch.org" "../" "elk_stack.org")
+
+ ("/home/matthew/Documents/projects/java_programming/HelloWorld/" (21841 26145 37903 592000) "./" "HelloWorld.java" "Helper.class" "../" "HelloWorld.class" "DisplayStatement.class")
+
+ ("/home/matthew/Documents/projects/java_programming/PlayingCards/" (21850 42823 185515 156000) "./" "CardGame.class" "../" "PlayingCardDeck.class" "PlayingCard.class" "CardGame.java" "PlayingCard.java" "PlayingCardDeck.java")
+
+ ("/home/matthew/Documents/projects/java_programming/" (21841 15395 478142 171000) "./" "../" "HelloWorld/")
+
+ ("/home/matthew/Documents/projects/c_programming/exercises/exercise_5/" (21832 6835 409126 741000) "./" "Makefile" "../" "exercise_5.c" "exercise_5")
+
+ ("/home/matthew/Documents/projects/c_programming/exercises/exercise_6/" (21841 13200 590190 885000) "nul" "./" "Makefile" "../" "exercise_6.c")
+
+ ("/home/matthew/Documents/projects/c_programming/exercises/" (21832 7026 273122 505000) "exercise_3/" "./" "exercise_4/" "../" "exercise_6/" "exercise_5/")
+
+ ("/home/matthew/Documents/projects/projecteuler/problems/input/problem_0054/" (21825 36382 845780 393000) "poker.txt" "./" "../")
+
+ ("/home/matthew/Documents/projects/projecteuler/problems/input/" (21825 36313 285781 937000) "problem_0022/" "./" "problem_0054/" "problem_0013/" "problem_0011/" "../" "problem_0008/")
+
+ ("/home/matthew/Documents/projects/c_programming/exercises/exercise_3/" (21815 7676 42219 908000) "nul" "exercise_3" "./" "Makefile" "exercise_3.c" "../")
+
+ ("/home/matthew/Documents/projects/c_programming/exercises/exercise_4/" (21825 34517 757821 787000) "nul" "./" "Makefile" "exercise_4" "exercise_4.c" "../")
+
+ ("/home/matthew/Documents/projects/projecteuler/" (21825 34869 969813 970000) "tests/" "./" ".gitignore" "README.md" "solver.py" "util/" ".git/" "../" "__init__.py" "problems/" "requirements/" "settings/")
+
+ ("/home/matthew/Documents/employment/" (21816 14816 408606 909000) "./" "coverletters/" "../" "resume/" "unofficial_transcript/" "portrait_employment.jpg")
+
+ ("/home/matthew/Documents/projects/c_programming/" (21806 65260 710417 984000) "./" "../" "hello_world/" "exercises/")
+
+ ("/home/matthew/Documents/projects/c_programming/hello_world/" (21805 57227 419216 543000) "nul" "./" "Makefile" "hello_world.c" "../" "hello_world")
+
+ ("/home/matthew/Scripts/Backup/" (21804 31374 686466 583000) "backup_rsync.sh" "./" "../")
+
+ ("/home/matthew/.emacs.d/.python-environments/" (21804 21319 331922 103000) "./" "python3.4/" "../" "python3.2/")
+
+ ("/home/matthew/Scripts/" (21804 21411 855920 49000) "./" "Keyboard/" "../" "Backup/")
+
+ ("/home/matthew/.emacs.d/bin/" (21804 21328 7921 910000) "./" "pycheckers" "../")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
