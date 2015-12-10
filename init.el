@@ -264,7 +264,6 @@
 
 
 ;; requires texlive-full, texify, auctex, preview-latex on system.
-(load "auctex.el" nil t t)
 
 ;; Turn on flyspell mode
 (add-hook 'LaTeX-mode-hook #'turn-on-flyspell)
@@ -272,6 +271,10 @@
 ;; Turn on pdflatex by default
 (setq TeX-PDF-mode t)
 
+;; Get rid of flymake configuration error
+(defun flymake-get-tex-args (file-name)
+  (list "pdflatex"
+        (list "-file-line-error" "-draftmode" "-interaction=nonstopmode" file-name)))
 
 ;;;;;;;
 ;; C ;;
@@ -280,18 +283,3 @@
 
 ;; Set default indent level to 4 spaces
 (setq-default c-basic-offset 4)
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(org-agenda-files
-   (quote
-    ("~/Documents/mathematics/statistics/statistics.org" "~/Documents/education.org")))
- '(org-support-shift-select t))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
