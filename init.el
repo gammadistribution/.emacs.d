@@ -28,6 +28,7 @@
    autopair              ;pairs up parentheses
    jedi                  ;python auto-completion
    yasnippet             ;emacs template binding
+   auto-complete-auctex  ;latex autocomplete
    ))
 
 (el-get 'sync el-get-sources)
@@ -276,6 +277,9 @@
 (defun flymake-get-tex-args (file-name)
   (list "pdflatex"
         (list "-file-line-error" "-draftmode" "-interaction=nonstopmode" file-name)))
+
+(require 'auto-complete-auctex)
+
 
 ;;;;;;;
 ;; C ;;

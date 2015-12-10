@@ -2,6 +2,8 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/home/matthew/Documents/mathematics/gradschool/MATH635/" . "final/")
+ ("/home/matthew/Documents/mathematics/gradschool/" . "MATH635/")
  ("/home/matthew/Documents/mathematics/MATH634/" . "homework_3/")
  ("/home/matthew/Documents/projects/coursera/introdatascience/datasci_course_materials/assignment3/problems/" . "solution_files/")
  ("/home/matthew/Documents/GreenZone/ElasticSearch/" . "elasticsearch-1.5.2/")
@@ -16,7 +18,7 @@
  ("/home/matthew/Documents/projects/coursera/" . "introdatascience/")
  ("/home/" . "matthew/")
  ("/home/matthew/Documents/mathematics/statistics/statsintro/" . "exercises/")
- ("/home/matthew/Documents/mathematics/" . "MATH634/")
+ ("/home/matthew/Documents/mathematics/" . "gradschool/")
  ("/home/matthew/Documents/GreenZone/" . "Notes/")
  ("/home/matthew/Documents/projects/projecteuler/problems/input/" . "problem_0054/")
  ("/home/matthew/Documents/projects/projecteuler/problems/" . "input/")
@@ -34,6 +36,7 @@
 ;; ----- ido-work-directory-list -----
 (
  "/home/matthew/.emacs.d/"
+ "/home/matthew/Documents/mathematics/gradschool/MATH635/final/"
  "/home/matthew/Documents/mathematics/MATH634/homework_3/"
  "/home/matthew/Downloads/"
  "/home/matthew/Documents/mathematics/MATH634/homework_2/"
@@ -72,6 +75,7 @@
 ;; ----- ido-work-file-list -----
 (
  "init.el"
+ "final.tex"
  "homework_3.tex"
  "homework_2.tex"
  "homework_2.log"
@@ -80,14 +84,25 @@
  "homework_1.pdf"
  "setxkbmap.sh"
  "hw-template.tex"
- "problem_0028.py"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/matthew/.emacs.d/" (22121 64792 608065 135000) "ac-comphist.dat" "./" ".gitignore" "README.md" "el-get/" ".git/" "ido.last" "../" "init.el" "bin/")
+ ("/home/matthew/.emacs.d/" (22122 1963 578745 506000) "./" ".gitignore" "README.md" "el-get/" ".git/" "ido.last" "../" "init.el" "auto-save-list/" "bin/")
 
- ("/home/matthew/" (22121 64786 591963 858000) "Templates/" ".ipython/" ".xdvirc" ".pki/" ".thumbnails/" ".Xauthority" ".dbus/" "Public/" "R/" "./" ".gvfs/" ".xsession-errors" ".gconf/" ".ssh/" "Music/" ".matlab/" ".texmf-var/" ".gnome2/" ".pulse/" ".bashrc" "Scripts/" ".ICEauthority" "Environments/" "Downloads/" ".gitconfig" ".cache/" ".python_history" "Desktop/" ".xsession-errors.old" ".gimp-2.8/" ".mozilla/" ".bash_logout" "Videos/" "../" ".gnome2_private/" ".config/" ".local/" ".profile" ".gnome/" "Pictures/" "Documents/" ".bash_history" ".pulse-cookie" ".fontconfig/" ".subversion/" ".gksu.lock" ".pip/" ".java/" ".mission-control/" ".emacs.d/" ".gtk-bookmarks")
+ ("/home/matthew/Documents/mathematics/gradschool/MATH635/final/" (22122 1931 31179 572000) "#final.tex#" "final_flymake.aux" "final.tex" "./" "final.aux" "final_flymake.log" "final.pdf" "final.log" "../" "problems/" ".predictive/")
+
+ ("/home/matthew/Documents/mathematics/gradschool/MATH635/homework/" (22121 62513 680966 532000) "homework_8/" "homework_1/" "./" "homework_11/" "homework_7/" "homework_6/" "homework_12/" "homework_3/" "../" "homework_9/" "homework_2/" "homework_5/" "homework_4/" "homework_10/")
+
+ ("/home/matthew/Documents/mathematics/gradschool/MATH635/" (22121 62513 680966 532000) "notes/" "./" "class_name.txt" "project/" "MATLAB/" "../" "slides/" "final/" "homework/")
+
+ ("/home/matthew/Documents/mathematics/gradschool/" (22102 39258 951409 728000) "./" ".gitignore" "MATH634/" ".git/" "../" "MATH635/")
+
+ ("/home/matthew/Documents/mathematics/" (22079 64181 371475 49000) "./" "applied_mathematics_laboratory/" "texts/" "../" "gradschool/" "statistics/" "independent_research/")
+
+ ("/home/matthew/Documents/" (22111 32014 336425 725000) "employment/" "./" "mathematics/" "org-files/" "projects/" "MATLAB/" "../")
+
+ ("/home/matthew/" (22122 1766 769380 386000) "Templates/" ".ipython/" ".xdvirc" ".pki/" ".thumbnails/" ".Xauthority" ".dbus/" "Public/" "R/" "./" ".gvfs/" ".xsession-errors" ".gconf/" ".ssh/" "Music/" ".matlab/" ".texmf-var/" ".gnome2/" ".pulse/" ".bashrc" "Scripts/" ".ICEauthority" "Environments/" "Downloads/" ".gitconfig" ".cache/" ".python_history" "Desktop/" ".xsession-errors.old" ".gimp-2.8/" ".mozilla/" ".gnupg/" ".bash_logout" "Videos/" "../" ".gnome2_private/" ".config/" ".local/" ".profile" ".gnome/" "Pictures/" "Documents/" ".bash_history" ".pulse-cookie" ".fontconfig/" ".subversion/" ".gksu.lock" ".pip/" ".java/" ".mission-control/" ".emacs.d/" ".gtk-bookmarks")
 
  ("/home/matthew/Documents/mathematics/MATH634/homework_3/" (22008 41694 845055 321000) "homework_3.tex" "homework_3.aux" "./" "homework_3.log" "homework_3.dvi" "../" "homework_3.pdf")
 
@@ -99,11 +114,7 @@
 
  ("/home/matthew/Documents/mathematics/MATH634/homework_1/" (21992 13896 88743 597000) "homework_1.pdf" "./" "homework_1.aux" "homework_1.log" "homework_1.dvi" "assignment1-Fa15.pdf" "homework_1.tex" "../")
 
- ("/home/matthew/Documents/" (21996 25682 65949 377000) "employment/" "./" "websites/" "mathematics/" "org-files/" "projects/" "MATLAB/" "GreenZone/" "../")
-
  ("/home/matthew/Scripts/Keyboard/" (21804 21411 855920 49000) "./" "setxkbmap.sh" "../")
-
- ("/home/matthew/Documents/mathematics/" (21984 56857 827251 707000) "./" "applied_mathematics_laboratory/" "MATH634/" "../" "statistics/" "independent_research/")
 
  ("/home/matthew/Documents/projects/coursera/introdatascience/datasci_course_materials/assignment3/problems/solution_files/" (21879 2592 107852 132000) "solution_inverted_index.json" "solution_multiply.json" "solution_asymmetric_friendships.json" "./" "solution_join.json" "solution_unique_trims.json" "../" "solution_friend_count.json")
 
