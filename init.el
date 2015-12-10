@@ -27,6 +27,7 @@
    auto-complete         ;completes any word
    autopair              ;pairs up parentheses
    jedi                  ;python auto-completion
+   yasnippet             ;emacs template binding
    ))
 
 (el-get 'sync el-get-sources)
